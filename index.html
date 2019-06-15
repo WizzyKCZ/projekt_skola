@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Rainbow six siege - stats</title>
+    <link rel="shortcut icon" href="foto/logo.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/margin.css">
+    <link rel="stylesheet" href="css/preload.css">
+</head>
+
+<div id="overlay">
+    <div class="spinner"></div>
+</div>
+
+<body style="background-color: #333">
+    <header>
+        <div class="alert alert-danger alert-dismissible fade show text-center" role="alert"
+            style="margin-bottom: 0px;">
+            <strong>We are sorry !!</strong> Some operators do not have finished loadout due to insufficient resources.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #222">
+            <a class="navbar-brand" href="">
+                <img src="foto/logo.png" alt="Logo" style="width:40px;">
+            </a>
+            <a class="navbar-brand" href="#">Rainbow Six Siege</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://r6.tracker.network/">R6 tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About the game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=4hd3X3Mesy8">Trailer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container" style="color: white">
+        <div style="margin-top: 15px;">
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search for operators..">
+        </div>
+        <div>
+            <ul id="myUL">
+                <div class="row">
+
+                    <div class="col-lg-6 text-center">
+                        <h1>Defenders</h1>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/warden.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-warden_349635.png"
+                                        alt="">
+                                    <h5>Warden</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/mozzie.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-mozzie_343389.png"
+                                        alt="">
+                                    <h5>Mozzie</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/kaid.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-kaid_340015.png"
+                                        alt="">
+                                    <h5>Kaid</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/clash.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-clash_332735.png"
+                                        alt="">
+                                    <h5>Clash</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/maestro.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-maestro_324450.png"
+                                        alt="">
+                                    <h5>Maestro</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/alibi.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-alibi_324449.png"
+                                        alt="">
+                                    <h5>Alibi</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/vigil.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operator-vigil-badges_307135.png"
+                                        alt="">
+                                    <h5>Vigil</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/ela.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-ela_301983.png"
+                                        alt="">
+                                    <h5>Ela</h5>
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/lesion.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-blood-orchid-badge-lesion_298982.png"
+                                        alt="">
+                                    <h5>Lesion</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/mira.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-velvet-shell-badge-mira_282826.png"
+                                        alt="">
+                                    <h5>Mira</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-caveira_263102.png"
+                                        alt="">
+                                    <h5>Caveira</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-echo_275572.png"
+                                        alt="">
+                                    <h5>Echo</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-valkyrie_250313.png"
+                                        alt="">
+                                    <h5>Valkyrie</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-frost_237595.png"
+                                        alt="">
+                                    <h5>Frost</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-mute_229870.png"
+                                        alt="">
+                                    <h5>Mute</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-smoke_229874.png"
+                                        alt="">
+                                    <h5>Smoke</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-castle_229852.png"
+                                        alt="">
+                                    <h5>Castle</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-pulse_229871.png"
+                                        alt="">
+                                    <h5>Pulse</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-doc_229853.png"
+                                        alt="">
+                                    <h5>Doc</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-rook_229872.png"
+                                        alt="">
+                                    <h5>Rook</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-jager_229864.png"
+                                        alt="">
+                                    <h5>Jager</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-bandit_229848.png"
+                                        alt="">
+                                    <h5>Bandit</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-tachanka_229876.png"
+                                        alt="">
+                                    <h5>Tachanka</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-kapkan_229866.png"
+                                        alt="">
+                                    <h5>Kapkan</h5>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <h1>Attackers</h1>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-nokk_349634.png"
+                                        alt="">
+                                    <h5>Nokk</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-gridlock_343369.png"
+                                        alt="">
+                                    <h5>Gridlock</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-nomad_339958.png"
+                                        alt="">
+                                    <h5>Nomad</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-maverick_332733.png"
+                                        alt="">
+                                    <h5>Maverick</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-lion.png"
+                                        alt="">
+                                    <h5>Lion</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-finka.png"
+                                        alt="">
+                                    <h5>Finka</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6_operator_dokkaebi_badge_307134.png"
+                                        alt="">
+                                    <h5>Dokkaebi</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="operators/zofia.html">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/zofia_badge_306416.png"
+                                        alt="" style="width:100px; weight:100px">
+                                    <h5>Zofia</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-blood-orchid-badge-ying_298983.png"
+                                        alt="">
+                                    <h5>Ying</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-velvet-shell-badge-jackal_282825.png"
+                                        alt="">
+                                    <h5>Jackal</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-hibana_275569.png"
+                                        alt="">
+                                    <h5>Hibana</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-capitao_263100.png"
+                                        alt="">
+                                    <h5>Capitao</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-blackbeard_250312.png"
+                                        alt="">
+                                    <h5>Blackbeard</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege-v3/r6-operators-badge-buck_237592.png"
+                                        alt="">
+                                    <h5>Buck</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-sledge_229873.png"
+                                        alt="">
+                                    <h5>Sledge</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-thatcher_229877.png"
+                                        alt="">
+                                    <h5>Thatcher</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-ash_229847.png"
+                                        alt="">
+                                    <h5>Ash</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-thermite_229878.png"
+                                        alt="">
+                                    <h5>Thermite</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-montagne_229868.png"
+                                        alt="">
+                                    <h5>Montage</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-twitch_229879.png"
+                                        alt="">
+                                    <h5>Twitch</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-blitz_229849.png"
+                                        alt="">
+                                    <h5>Blitz</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-iq_229861.png"
+                                        alt="">
+                                    <h5>IQ</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-fuze_229856.png"
+                                        alt="">
+                                    <h5>Fuze</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="d-inline-flex text-center">
+                            <li>
+                                <a href="">
+                                    <img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/rainbow6/siege/r6-operators-badge-glaz_229859.png"
+                                        alt="">
+                                    <h5>Glaz</h5>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </main>
+    <footer style="background-color: #222; color: white">
+        <div class="row container-fluid">
+            <div class="col-lg-6 text-center">
+                <a href="https://www.ubisoft.com/"><img src="foto/loga/ubisoft.png" alt=""></a>
+                <a href="http://store.ubi.com/"><img src="foto/loga/ubisoft-store.png" alt=""></a>
+                <a href="https://blog.ubi.com/"><img src="foto/loga/ubisoft-blog.png" alt=""></a>
+                <a href="https://club.ubisoft.com/"><img src="foto/loga/ubisoft-club.png" alt=""></a>
+                <a href="https://uplay.ubi.com/"><img src="foto/loga/uplay.png" alt=""></a>
+                <a href="http://www.xbox.com/"><img src="foto/loga/xbox.png" alt=""></a>
+                <a href="http://www.playstation.com/"><img src="foto/loga/ps4.png" alt=""></a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <h2>Follow us:</h2>
+                <a href="https://www.facebook.com/rainbow6usa"><img style="height: 50px; width: 50px;"
+                        src="foto/social/fb.png" alt=""></a>
+                <a href="https://twitter.com/rainbow6game"><img style="height: 50px; width: 50px;"
+                        src="foto/social/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/rainbow6game_us/"><img style="height: 50px; width: 50px;"
+                        src="foto/social/ig.png" alt=""></a>
+                <a href="https://www.youtube.com/playlist?list=PLpwyzkZha0Z7FQnWlQZ7OvvRV8ULzsoI4"><img
+                        style="height: 50px; width: 50px;" src="foto/social/yt.png" alt=""></a>
+            </div>
+        </div>
+        <div class="text-center">
+            <hr class="bg-white">&copy; Filip Růžička, IT1, 2019
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="preload.js"></script>
+    <script>
+        function search() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
