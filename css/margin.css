@@ -2,3 +2,20 @@
     margin-left: none;
     margin-right: none;
 }
+
+body {
+    margin: 0;
+    background-image: url("../foto/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.div-image {
+    position: absolute;
+    top: 9%;
+    text-align: center;
+    background-color: #222;
+    margin-left: 20%;
+    margin-right: 20%;
+}
