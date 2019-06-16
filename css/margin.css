@@ -10,12 +10,3 @@ body {
     background-attachment: fixed;
     height: 100%;
 }
-
-.div-image {
-    position: absolute;
-    top: 9%;
-    text-align: center;
-    background-color: #222;
-    margin-left: 20%;
-    margin-right: 20%;
-}
